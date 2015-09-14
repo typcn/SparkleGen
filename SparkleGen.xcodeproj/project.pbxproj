@@ -14,6 +14,10 @@
 		FD0E3F181BA705640086E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0E3F161BA705640086E286 /* Main.storyboard */; };
 		FD0E3F231BA705640086E286 /* SparkleGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0E3F221BA705640086E286 /* SparkleGenTests.m */; };
 		FD0E3F2E1BA705640086E286 /* SparkleGenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0E3F2D1BA705640086E286 /* SparkleGenUITests.m */; };
+		FD0E3F5D1BA70A710086E286 /* Property.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD0E3F5B1BA70A710086E286 /* Property.plist */; settings = {ASSET_TAGS = (); }; };
+		FD0E3F6F1BA711400086E286 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0E3F6E1BA711200086E286 /* MGSFragaria.framework */; };
+		FD0E3F701BA711400086E286 /* MGSFragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD0E3F6E1BA711200086E286 /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD0E3F7A1BA71EDE0086E286 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0E3F791BA71EDE0086E286 /* DragView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,35 @@
 			remoteGlobalIDString = FD0E3F071BA705640086E286;
 			remoteInfo = SparkleGen;
 		};
+		FD0E3F6D1BA711200086E286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD0E3F601BA711200086E286 /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB69B62B118B745700903D1D;
+			remoteInfo = MGSFragaria;
+		};
+		FD0E3F711BA711400086E286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD0E3F601BA711200086E286 /* Fragaria.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AB69B62A118B745700903D1D;
+			remoteInfo = MGSFragaria;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD0E3F731BA711400086E286 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD0E3F701BA711400086E286 /* MGSFragaria.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD0E3F081BA705640086E286 /* SparkleGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkleGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +81,10 @@
 		FD0E3F291BA705640086E286 /* SparkleGenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkleGenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0E3F2D1BA705640086E286 /* SparkleGenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkleGenUITests.m; sourceTree = "<group>"; };
 		FD0E3F2F1BA705640086E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0E3F5C1BA70A710086E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Property.plist; sourceTree = "<group>"; };
+		FD0E3F601BA711200086E286 /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = Fragaria/Fragaria.xcodeproj; sourceTree = "<group>"; };
+		FD0E3F781BA71EDE0086E286 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		FD0E3F791BA71EDE0086E286 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0E3F6F1BA711400086E286 /* MGSFragaria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,7 @@
 				FD0E3F211BA705640086E286 /* SparkleGenTests */,
 				FD0E3F2C1BA705640086E286 /* SparkleGenUITests */,
 				FD0E3F091BA705640086E286 /* Products */,
+				FD0E3F601BA711200086E286 /* Fragaria.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +141,13 @@
 				FD0E3F0C1BA705640086E286 /* AppDelegate.m */,
 				FD0E3F111BA705640086E286 /* ViewController.h */,
 				FD0E3F121BA705640086E286 /* ViewController.m */,
+				FD0E3F781BA71EDE0086E286 /* DragView.h */,
+				FD0E3F791BA71EDE0086E286 /* DragView.m */,
 				FD0E3F141BA705640086E286 /* Assets.xcassets */,
 				FD0E3F161BA705640086E286 /* Main.storyboard */,
 				FD0E3F191BA705640086E286 /* Info.plist */,
 				FD0E3F0E1BA705640086E286 /* Supporting Files */,
+				FD0E3F5B1BA70A710086E286 /* Property.plist */,
 			);
 			path = SparkleGen;
 			sourceTree = "<group>";
@@ -137,6 +178,14 @@
 			path = SparkleGenUITests;
 			sourceTree = "<group>";
 		};
+		FD0E3F611BA711200086E286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD0E3F6E1BA711200086E286 /* MGSFragaria.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +196,12 @@
 				FD0E3F041BA705640086E286 /* Sources */,
 				FD0E3F051BA705640086E286 /* Frameworks */,
 				FD0E3F061BA705640086E286 /* Resources */,
+				FD0E3F731BA711400086E286 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD0E3F721BA711400086E286 /* PBXTargetDependency */,
 			);
 			name = SparkleGen;
 			productName = SparkleGen;
@@ -204,6 +255,11 @@
 				TargetAttributes = {
 					FD0E3F071BA705640086E286 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					FD0E3F1D1BA705640086E286 = {
 						CreatedOnToolsVersion = 7.0;
@@ -226,6 +282,12 @@
 			mainGroup = FD0E3EFF1BA705640086E286;
 			productRefGroup = FD0E3F091BA705640086E286 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FD0E3F611BA711200086E286 /* Products */;
+					ProjectRef = FD0E3F601BA711200086E286 /* Fragaria.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FD0E3F071BA705640086E286 /* SparkleGen */,
@@ -235,6 +297,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FD0E3F6E1BA711200086E286 /* MGSFragaria.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MGSFragaria.framework;
+			remoteRef = FD0E3F6D1BA711200086E286 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		FD0E3F061BA705640086E286 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -242,6 +314,7 @@
 			files = (
 				FD0E3F151BA705640086E286 /* Assets.xcassets in Resources */,
 				FD0E3F181BA705640086E286 /* Main.storyboard in Resources */,
+				FD0E3F5D1BA70A710086E286 /* Property.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0E3F131BA705640086E286 /* ViewController.m in Sources */,
+				FD0E3F7A1BA71EDE0086E286 /* DragView.m in Sources */,
 				FD0E3F101BA705640086E286 /* main.m in Sources */,
 				FD0E3F0D1BA705640086E286 /* AppDelegate.m in Sources */,
 			);
@@ -301,6 +375,11 @@
 			target = FD0E3F071BA705640086E286 /* SparkleGen */;
 			targetProxy = FD0E3F2A1BA705640086E286 /* PBXContainerItemProxy */;
 		};
+		FD0E3F721BA711400086E286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGSFragaria;
+			targetProxy = FD0E3F711BA711400086E286 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -310,6 +389,14 @@
 				FD0E3F171BA705640086E286 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD0E3F5B1BA70A710086E286 /* Property.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD0E3F5C1BA70A710086E286 /* Base */,
+			);
+			name = Property.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -388,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -489,6 +576,7 @@
 				FD0E3F341BA705640086E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD0E3F351BA705640086E286 /* Build configuration list for PBXNativeTarget "SparkleGenTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +585,7 @@
 				FD0E3F371BA705640086E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD0E3F381BA705640086E286 /* Build configuration list for PBXNativeTarget "SparkleGenUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +594,7 @@
 				FD0E3F3A1BA705640086E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPCAST_TMPL</key>
+	<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;rss version=&quot;2.0&quot; xmlns:sparkle=&quot;http://www.andymatuschak.org/xml-namespaces/sparkle&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;&gt;
+  &lt;channel&gt;
+  &lt;title&gt;{{AppName}}&lt;/title&gt;
+  &lt;link&gt;{{AppCastURL}}&lt;/link&gt;
+  &lt;language&gt;{{Language}}&lt;/language&gt;
+  &lt;item&gt;
+      &lt;title&gt;Updae {{Version}}&lt;/title&gt;
+      &lt;sparkle:releaseNotesLink&gt;
+          {{releaseNoteLink}}
+      &lt;/sparkle:releaseNotesLink&gt;
+      &lt;pubDate&gt;{{pubDate}}&lt;/pubDate&gt;
+      {{latestEnclosure}}
+      &lt;sparkle:deltas&gt;
+          {{deltas}}
+      &lt;/sparkle:deltas&gt;
+      &lt;sparkle:minimumSystemVersion&gt;{{minSystem}}&lt;/sparkle:minimumSystemVersion&gt;
+  &lt;/item&gt;
+  &lt;/channel&gt;
+&lt;/rss&gt;
+</string>
+</dict>
+</plist>
