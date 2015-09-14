@@ -181,7 +181,7 @@ NSMutableArray *versionArray;
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateStyle = NSDateFormatterMediumStyle;
-    [formatter setDateFormat:@"MMM dd YYYY HH:mm:SS 'GMT'ZZZ (zzzz)"];
+    [formatter setDateFormat:@"MMM dd YYYY HH:mm:ss 'GMT'ZZZ (zzzz)"];
     NSString *dateStr = [formatter stringFromDate:[NSDate date]];
     
     NSString *tmpl = [fragaria string];
